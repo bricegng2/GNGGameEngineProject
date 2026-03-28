@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E6FEE512-36A1-3A42-8BBD-4D728D691ACD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>bgfx</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)build\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)build\$(ProjectName)_Int_$(Platform)_$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bgfx</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)build\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)build\$(ProjectName)_Int_$(Platform)_$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bgfx</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44244 /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267;4305</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44244 /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4244;4267;4305</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Libraries\bgfx\include\bgfx\bgfx.h" />
+    <ClInclude Include="..\Libraries\bgfx\include\bgfx\c99\bgfx.h" />
+    <ClInclude Include="..\Libraries\bgfx\include\bgfx\defines.h" />
+    <ClInclude Include="..\Libraries\bgfx\include\bgfx\embedded_shader.h" />
+    <ClInclude Include="..\Libraries\bgfx\include\bgfx\platform.h" />
+    <ClCompile Include="..\Libraries\bgfx\src\amalgamated.cpp" />
+    <ClInclude Include="..\Libraries\bgfx\src\bgfx_p.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\charset.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\config.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\debug_renderdoc.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\dxgi.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\emscripten.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear0.bin.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear1.bin.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear2.bin.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear3.bin.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear4.bin.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear5.bin.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear6.bin.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear7.bin.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\fs_debugfont.bin.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\glcontext_egl.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\glcontext_html5.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\glcontext_wgl.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\glimports.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\nvapi.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\renderer.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_d3d.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_d3d11.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_d3d12.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_gl.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_mtl.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_vk.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\shader.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\shader_dxbc.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\shader_spirv.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\topology.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\version.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\vertexlayout.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\vs_clear.bin.h" />
+    <ClInclude Include="..\Libraries\bgfx\src\vs_debugfont.bin.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

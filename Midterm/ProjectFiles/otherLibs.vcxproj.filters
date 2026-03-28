@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Libraries\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Libraries\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Libraries\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Libraries\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Libraries\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Libraries\pcg-cpp\include\pcg_extras.hpp">
+      <Filter>pcg-cpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\pcg-cpp\include\pcg_random.hpp">
+      <Filter>pcg-cpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\pcg-cpp\include\pcg_uint128.hpp">
+      <Filter>pcg-cpp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\deprecated\rrsprintf.h">
+      <Filter>stb\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\deprecated\stb.h">
+      <Filter>stb\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\deprecated\stb_image_resize.h">
+      <Filter>stb\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\deprecated\stretchy_buffer.h">
+      <Filter>stb\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_c_lexer.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_connected_components.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_divide.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_ds.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_dxt.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_easy_font.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_herringbone_wang_tile.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_hexwave.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_image.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_image_resize2.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_image_resize_test\old_image_resize.h">
+      <Filter>stb\stb_image_resize_test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_image_write.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_include.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_leakcheck.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_perlin.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_rect_pack.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_sprintf.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_textedit.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_tilemap_editor.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_truetype.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\stb_voxel_render.h">
+      <Filter>stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\tests\caveview\cave_parse.h">
+      <Filter>stb\tests\caveview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\tests\caveview\caveview.h">
+      <Filter>stb\tests\caveview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\tests\caveview\glext.h">
+      <Filter>stb\tests\caveview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\tests\caveview\glext_list.h">
+      <Filter>stb\tests\caveview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\tests\caveview\stb_gl.h">
+      <Filter>stb\tests\caveview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\tests\caveview\stb_glprog.h">
+      <Filter>stb\tests\caveview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\tests\oversample\stb_wingraph.h">
+      <Filter>stb\tests\oversample</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\stb\tests\prerelease\stb_lib.h">
+      <Filter>stb\tests\prerelease</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Libraries\cmakelists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{064E99FB-0067-3703-8E12-73325628F7EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pcg-cpp">
+      <UniqueIdentifier>{1A793663-38E7-3420-A750-363ED3B2B4B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pcg-cpp\include">
+      <UniqueIdentifier>{C77D09EA-27F9-3651-AB13-8A69F5180278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stb">
+      <UniqueIdentifier>{52A085B5-7C42-307C-9412-C9BB59F6AAF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stb\deprecated">
+      <UniqueIdentifier>{09BD289B-B30D-32F9-AE6A-4FFC26BDC892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stb\stb_image_resize_test">
+      <UniqueIdentifier>{581C58D9-A701-3F10-8671-32F68B1BD243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stb\tests">
+      <UniqueIdentifier>{A7B549E4-6A4B-3520-B50C-9BB53B46C9BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stb\tests\caveview">
+      <UniqueIdentifier>{AD5964DB-91A6-3D99-902A-7B74FFBA30F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stb\tests\oversample">
+      <UniqueIdentifier>{A68E4305-2B28-3DF3-997A-6680D08F8366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stb\tests\prerelease">
+      <UniqueIdentifier>{A7E99F29-F3FD-3BE7-ABCB-4EF21E3F7D88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

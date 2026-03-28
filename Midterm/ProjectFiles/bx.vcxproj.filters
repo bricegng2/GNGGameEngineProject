@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Libraries\bx\src\amalgamated.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Libraries\bx\include\bx\allocator.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\bounds.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\bx.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\commandline.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\config.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\constants.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\cpu.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\debug.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\easing.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\endian.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\error.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\file.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\filepath.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\float4x4_t.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\handlealloc.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\hash.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\macros.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\maputil.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\math.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\mpscqueue.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\mutex.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\os.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\pixelformat.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\platform.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\process.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\readerwriter.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\ringbuffer.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\rng.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\semaphore.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\settings.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\simd_t.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\sort.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\spscqueue.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\string.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\thread.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\timer.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\typetraits.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\uint32_t.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\bx\url.h">
+      <Filter>include\bx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\compat\msvc\alloca.h">
+      <Filter>include\compat\msvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\compat\msvc\dirent.h">
+      <Filter>include\compat\msvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\compat\msvc\inttypes.h">
+      <Filter>include\compat\msvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\compat\msvc\pre1600\stdint.h">
+      <Filter>include\compat\msvc\pre1600</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bx\include\compat\msvc\stdbool.h">
+      <Filter>include\compat\msvc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Libraries\cmakelists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{CDA55B62-F54A-3996-B256-593CE4802345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bx">
+      <UniqueIdentifier>{EF5A79ED-65E7-3D10-8A1D-4B63D330CAF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\compat">
+      <UniqueIdentifier>{8A18CBBC-A42F-37C8-97AF-96D835572913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\compat\msvc">
+      <UniqueIdentifier>{F13D59ED-1CEC-376B-98C7-FD5D6B471212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\compat\msvc\pre1600">
+      <UniqueIdentifier>{C6E5FCF8-B983-3721-9DC2-45CE1D561851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{A37D5E84-D64B-397A-B6FF-879FD817C055}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

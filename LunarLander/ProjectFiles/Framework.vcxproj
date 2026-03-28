@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Framework\Source\Components\Component.cpp" />
+    <ClCompile Include="..\Framework\Source\Components\ComponentManager.cpp" />
+    <ClCompile Include="..\Framework\Source\EventSystem\EventManager.cpp" />
+    <ClCompile Include="..\Framework\Source\FWCore.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\GameCore.cpp" />
+    <ClCompile Include="..\Framework\Source\Imgui\ImGuiManager.cpp" />
+    <ClCompile Include="..\Framework\Source\Imgui\imgui_impl_bgfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Math\Matrix.cpp" />
+    <ClCompile Include="..\Framework\Source\Math\Random.cpp" />
+    <ClCompile Include="..\Framework\Source\Objects\Camera.cpp" />
+    <ClCompile Include="..\Framework\Source\Objects\GameObject.cpp" />
+    <ClCompile Include="..\Framework\Source\Objects\Scene.cpp" />
+    <ClCompile Include="..\Framework\Source\Physics\Box2D\PhysicsBodyBox2D.cpp" />
+    <ClCompile Include="..\Framework\Source\Physics\Box2D\PhysicsWorldBox2D.cpp" />
+    <ClCompile Include="..\Framework\Source\Physics\Jolt\JoltHelpers.cpp" />
+    <ClCompile Include="..\Framework\Source\Physics\Jolt\PhysicsBodyJolt.cpp" />
+    <ClCompile Include="..\Framework\Source\Physics\Jolt\PhysicsWorldJolt.cpp" />
+    <ClCompile Include="..\Framework\Source\Physics\PhysicsWorld.cpp" />
+    <ClCompile Include="..\Framework\Source\Resources\Material.cpp" />
+    <ClCompile Include="..\Framework\Source\Resources\Mesh.cpp" />
+    <ClCompile Include="..\Framework\Source\Resources\ResourceManager.cpp" />
+    <ClCompile Include="..\Framework\Source\Resources\ShaderProgram.cpp" />
+    <ClCompile Include="..\Framework\Source\Resources\Texture.cpp" />
+    <ClCompile Include="..\Framework\Source\Utility\Uniforms.cpp" />
+    <ClCompile Include="..\Framework\Source\Utility\Utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Source\b2_user_settings.h" />
+    <ClInclude Include="..\Framework\Source\Components\Component.h" />
+    <ClInclude Include="..\Framework\Source\Components\ComponentManager.h" />
+    <ClInclude Include="..\Framework\Source\CoreHeaders.h" />
+    <ClInclude Include="..\Framework\Source\DataTypes.h" />
+    <ClInclude Include="..\Framework\Source\EventSystem\EventListener.h" />
+    <ClInclude Include="..\Framework\Source\EventSystem\EventManager.h" />
+    <ClInclude Include="..\Framework\Source\EventSystem\Events.h" />
+    <ClInclude Include="..\Framework\Source\Framework.h" />
+    <ClInclude Include="..\Framework\Source\FWCore.h" />
+    <ClInclude Include="..\Framework\Source\GameCore.h" />
+    <ClInclude Include="..\Framework\Source\Imgui\fs_ocornut_imgui.bin.h" />
+    <ClInclude Include="..\Framework\Source\Imgui\ImGuiConfig.h" />
+    <ClInclude Include="..\Framework\Source\Imgui\ImGuiManager.h" />
+    <ClInclude Include="..\Framework\Source\Imgui\imgui_impl_bgfx.h" />
+    <ClInclude Include="..\Framework\Source\Imgui\vs_ocornut_imgui.bin.h" />
+    <ClInclude Include="..\Framework\Source\Math\MathHelpers.h" />
+    <ClInclude Include="..\Framework\Source\Math\Matrix.h" />
+    <ClInclude Include="..\Framework\Source\Math\Random.h" />
+    <ClInclude Include="..\Framework\Source\Math\Vector.h" />
+    <ClInclude Include="..\Framework\Source\Objects\Camera.h" />
+    <ClInclude Include="..\Framework\Source\Objects\GameObject.h" />
+    <ClInclude Include="..\Framework\Source\Objects\Scene.h" />
+    <ClInclude Include="..\Framework\Source\Physics\Box2D\PhysicsBodyBox2D.h" />
+    <ClInclude Include="..\Framework\Source\Physics\Box2D\PhysicsWorldBox2D.h" />
+    <ClInclude Include="..\Framework\Source\Physics\Jolt\JoltHelpers.h" />
+    <ClInclude Include="..\Framework\Source\Physics\Jolt\PhysicsBodyJolt.h" />
+    <ClInclude Include="..\Framework\Source\Physics\Jolt\PhysicsWorldJolt.h" />
+    <ClInclude Include="..\Framework\Source\Physics\PhysicsBody.h" />
+    <ClInclude Include="..\Framework\Source\Physics\PhysicsTypes.h" />
+    <ClInclude Include="..\Framework\Source\Physics\PhysicsWorld.h" />
+    <ClInclude Include="..\Framework\Source\Resources\Material.h" />
+    <ClInclude Include="..\Framework\Source\Resources\Mesh.h" />
+    <ClInclude Include="..\Framework\Source\Resources\ResourceManager.h" />
+    <ClInclude Include="..\Framework\Source\Resources\ShaderProgram.h" />
+    <ClInclude Include="..\Framework\Source\Resources\Texture.h" />
+    <ClInclude Include="..\Framework\Source\Utility\Uniforms.h" />
+    <ClInclude Include="..\Framework\Source\Utility\Utility.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5C8C6CF7-1EEE-33F0-A3DA-AADD4FAFD0D9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Framework</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)build\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)build\$(ProjectName)_Int_$(Platform)_$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Framework</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)build\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)build\$(ProjectName)_Int_$(Platform)_$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Framework</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Framework\Source;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;..\Libraries\JoltPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>CoreHeaders.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;B2_USER_SETTINGS;JPH_FLOATING_POINT_EXCEPTIONS_ENABLED;JPH_DEBUG_RENDERER;JPH_PROFILE_ENABLED;JPH_OBJECT_STREAM;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;BX_CONFIG_DEBUG=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BX_CONFIG_DEBUG=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Framework\Source;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Framework\Source;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Framework\Source;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;..\Libraries\JoltPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>CoreHeaders.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;B2_USER_SETTINGS;JPH_FLOATING_POINT_EXCEPTIONS_ENABLED;JPH_DEBUG_RENDERER;JPH_PROFILE_ENABLED;JPH_OBJECT_STREAM;JPH_USE_AVX2;JPH_USE_AVX;JPH_USE_SSE4_1;JPH_USE_SSE4_2;JPH_USE_LZCNT;JPH_USE_TZCNT;JPH_USE_F16C;JPH_USE_FMADD;NDEBUG;BX_CONFIG_DEBUG=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BX_CONFIG_DEBUG=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Framework\Source;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Framework\Source;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

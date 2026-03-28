@@ -1,0 +1,42 @@
+Before you do anything else:
+- Clone your repo
+- Work in your "main" branch
+- Create a folder called "LunarLander" in the root folder
+- Copy all the files from this zip into the "LunarLander" folder
+- Commit and push the new folder before changing anything
+- Do your work and commit the changes when you're done
+
+!!! Commit once at the start and once at the end of the test !!!
+
+- Git usage is part of the grade, so any missing or extra commits will not get the "git" grades.
+
+
+
+There's a demo.exe in the Game folder.
+
+
+
+TODO:
+Most of the code is set up but there are a few things that don't work.
+
+- Something is wrong with the rendering | DONE
+
+- GameObject::setActive isn't working | DONE? line 56 in component manager
+	- This function should activate/deactivate the components
+	- All code to fix this should be in this method
+
+- The pooling is not working | DONE
+	- All 5 pooled collectibles are visible at the start
+		- Objects need to be properly disabled (see GameObject::setActive block above), not just hidden off camera
+		- Active objects should be in both the m_objects list and the m_collectiblesActive list
+		- Deactivated object should only be in the m_collectiblesInactive
+
+- Player movement isn't working | DONE
+	- A force should be applied to the bottom left and bottom right of the "ship" when A and D are held
+
+- Collectible spawning isn't implemented | DONE
+	- Use the constant defined at the top of LunarLanderScene.cpp for the timing
+
+- Collision isn't implemented | DONE
+	- Only check for collisions with objects in the m_collectiblesActive list
+	- This is not using the physics engine for collisions, just basic circle-circle collision

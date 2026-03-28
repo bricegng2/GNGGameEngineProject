@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{49CAA82E-9970-37C4-91FC-DB82EEB31CEE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>bx</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)build\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)build\$(ProjectName)_Int_$(Platform)_$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bx</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)build\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)build\$(ProjectName)_Int_$(Platform)_$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bx</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44244 /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /w44244 /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Libraries\bx\include\bx\allocator.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\bounds.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\bx.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\commandline.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\config.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\constants.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\cpu.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\debug.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\easing.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\endian.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\error.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\file.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\filepath.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\float4x4_t.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\handlealloc.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\hash.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\macros.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\maputil.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\math.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\mpscqueue.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\mutex.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\os.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\pixelformat.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\platform.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\process.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\readerwriter.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\ringbuffer.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\rng.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\semaphore.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\settings.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\simd_t.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\sort.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\spscqueue.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\string.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\thread.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\timer.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\typetraits.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\uint32_t.h" />
+    <ClInclude Include="..\Libraries\bx\include\bx\url.h" />
+    <ClInclude Include="..\Libraries\bx\include\compat\msvc\alloca.h" />
+    <ClInclude Include="..\Libraries\bx\include\compat\msvc\dirent.h" />
+    <ClInclude Include="..\Libraries\bx\include\compat\msvc\inttypes.h" />
+    <ClInclude Include="..\Libraries\bx\include\compat\msvc\pre1600\stdint.h" />
+    <ClInclude Include="..\Libraries\bx\include\compat\msvc\stdbool.h" />
+    <ClCompile Include="..\Libraries\bx\src\amalgamated.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

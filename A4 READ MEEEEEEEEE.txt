@@ -1,0 +1,7 @@
+Player movement and First/Third person controls with the mouse
+
+notes:
+hold space to show mouse cursor
+e - create boxes
+q - destroy boxes
+see method spawnBox in IslandScene.cpp at line 155 to see how box spawning/destroying works

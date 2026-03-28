@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Libraries\bgfx\src\amalgamated.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Libraries\bgfx\include\bgfx\bgfx.h">
+      <Filter>include\bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\include\bgfx\c99\bgfx.h">
+      <Filter>include\bgfx\c99</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\include\bgfx\defines.h">
+      <Filter>include\bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\include\bgfx\embedded_shader.h">
+      <Filter>include\bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\include\bgfx\platform.h">
+      <Filter>include\bgfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\bgfx_p.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\charset.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\debug_renderdoc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\dxgi.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\emscripten.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear0.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear1.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear2.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear3.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear4.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear5.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear6.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\fs_clear7.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\fs_debugfont.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\glcontext_egl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\glcontext_html5.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\glcontext_wgl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\glimports.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\nvapi.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\renderer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_d3d.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_d3d11.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_d3d12.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_gl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_mtl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\renderer_vk.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\shader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\shader_dxbc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\shader_spirv.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\topology.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\version.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\vertexlayout.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\vs_clear.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\bgfx\src\vs_debugfont.bin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Libraries\cmakelists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{CDA55B62-F54A-3996-B256-593CE4802345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bgfx">
+      <UniqueIdentifier>{7D9950B3-3AB7-30A0-B8C5-063639D1AEC8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bgfx\c99">
+      <UniqueIdentifier>{371B6DD1-16FB-3D35-A1CE-DCFF3F302328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{A37D5E84-D64B-397A-B6FF-879FD817C055}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

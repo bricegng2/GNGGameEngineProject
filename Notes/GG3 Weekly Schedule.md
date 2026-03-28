@@ -1,0 +1,81 @@
+
+This is the current plan for the semester, things will likely change a little over the weeks, but I'll keep it up to date.
+
+**Grades**
+- 4 Assignments
+	- See Brightspace for dates and grades
+	- Assignment 1 - 15%
+	- Assignment 2 - 15%
+	- Assignment 3 - 20%
+	- Assignment 4 - 20%
+- 2 Tests - 15% each
+	- These are in class and will be a mix of programming and quiz questions
+
+**First Half**
+- Week 1:
+	- [Build Systems](PublicNotes/General/Build%20Systems.md)
+	- [Environment Variables](PublicNotes/General/Environment%20Variables.md)
+	- [Exercise - Project Setup](Exercises/Exercise%20-%20Project%20Setup.md)
+	- [Exercise - Mesh Creation](Exercises/Exercise%20-%20Mesh%20Creation.md)
+	- [Event Management](PublicNotes/Engine/Event%20Management.md)
+	- [Function Pointers](PublicNotes/C++%20Details/Function%20Pointers.md)
+	- [Exercise - EventManager](Exercises/Exercise%20-%20EventManager.md)
+- Week 2:
+	- Scenes
+	- Virtual Gamepad
+	- Bitwise Operators
+	- Bit Flags
+	- 3D Coordinate Systems
+	- Transforms
+	- View And Projection Matrices
+	- bgfx Shaders
+- Week 3:
+	- ECS Architecture
+	- Exercise - Basic ECS Setup
+	- Templated Method Example
+- Week 4:
+	- Abstraction Layers
+	- Physics Engines Overview
+	- Physics Engine - Setup
+	- Physics Engine - World
+	- Physics Engine - Bodies
+	- Physics Engine - Collision
+- Week 5:
+	- Physics Engine - Joints
+	- Physics Engine - Collision Filters
+	- Physics Engine - Sensors
+	- Physics Engine - Contact Normals
+	- Physics Engine - World Step
+	- Physics Engine - Physics Math
+- Week 6:
+	- Rendering into a Texture
+	- File Access
+	- JSON
+- Week 7: 1st Test
+
+**Second Half**
+- Week 9:
+	- IP and Sockets
+	- Windows Sockets
+	- TCP Web Request Example
+	- UDP Send and Receive Example
+- Week 10:
+	- Plane Mesh
+	- Water
+	- Mesh File Loading
+- Week 11:
+	- Normals
+	- Cross Product
+	- Heightmaps
+	- Lighting Basics
+- Week 12:
+	- Lighting
+	- Barycentric Coordinates
+	- Orbit Camera
+- Week 13:
+	- Audio
+	- Overflow & Assignment help
+- Week 14:
+	- Assignment help & 2nd Test
+- Week 15:
+	- No classes

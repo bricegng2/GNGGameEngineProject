@@ -1,0 +1,25 @@
+Before you do anything else:
+- Clone your repo
+- Create a folder called "Midterm" in the root folder
+- Copy all the files from this zip into the "Midterm" folder
+- Commit and push the new folder before changing anything
+- Git usage is part of the grade, so don't skip this
+- Do your work and commit the changes when you're done
+
+TODO:
+Most of the code is set up but there are a few things that don't work.
+Most of the code you need to change are in the files in the "Game/Source/Midterm" folder but not all.
+
+There's a demo.exe in the Game folder.
+
+- It doesn't compile | DONE
+- Something is wrong with the rendering | DONE
+- Some textures are wrong | DONE
+- The player isn't falling | DONE
+- The meteors don't spawn
+	- Once spawning, the meteors don't kill the player| DONE
+	- They also all spawn in the same spot, give them random x positions within the range of the screen| DONE
+	- use ApplyLinearImpulse with a random diagonal-down impulse so they can often move in different directions| DONE
+- Player input isn't working
+	- The player is meant to do small hops to the left and right
+	- use ApplyLinearImpulse with small diagonal-up impulses to move the player

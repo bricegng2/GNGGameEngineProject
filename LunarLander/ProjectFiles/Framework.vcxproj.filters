@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{D2F657EA-9397-3821-9229-C7C9EB425F9E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\EventSystem">
+      <UniqueIdentifier>{D0F27C63-4177-3246-90B2-5898DAA6ADD2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Imgui">
+      <UniqueIdentifier>{0FD4D6AF-784F-34F5-ADD9-A255E27327A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Math">
+      <UniqueIdentifier>{344373D7-EFA2-38DC-93B0-4247F4D6476F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Objects">
+      <UniqueIdentifier>{B8970B4B-59CD-327B-A2B0-D5ECCA515F53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Utility">
+      <UniqueIdentifier>{62D4850E-423B-300F-8245-F82BF9942369}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resources">
+      <UniqueIdentifier>{3E205398-F34A-3905-B82D-D1F3D52F84FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Components">
+      <UniqueIdentifier>{4a232b64-22da-4f19-8445-361dbe7f2f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics">
+      <UniqueIdentifier>{ddab523b-b6bd-4445-a739-f2911cd75093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\Box2D">
+      <UniqueIdentifier>{3834c7e6-6156-47f7-b17d-654fef8f5fce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Physics\Jolt">
+      <UniqueIdentifier>{2279af08-4b9b-402b-9a17-b6a151c6b710}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Framework\Source\EventSystem\EventManager.cpp">
+      <Filter>Source\EventSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Imgui\imgui_impl_bgfx.cpp">
+      <Filter>Source\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Imgui\ImGuiManager.cpp">
+      <Filter>Source\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Math\Matrix.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Math\Random.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Objects\Camera.cpp">
+      <Filter>Source\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Objects\GameObject.cpp">
+      <Filter>Source\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\FWCore.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\GameCore.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Objects\Scene.cpp">
+      <Filter>Source\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Resources\Material.cpp">
+      <Filter>Source\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Resources\Mesh.cpp">
+      <Filter>Source\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Resources\ResourceManager.cpp">
+      <Filter>Source\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Resources\ShaderProgram.cpp">
+      <Filter>Source\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Resources\Texture.cpp">
+      <Filter>Source\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Utility\Uniforms.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Utility\Utility.cpp">
+      <Filter>Source\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Components\Component.cpp">
+      <Filter>Source\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Components\ComponentManager.cpp">
+      <Filter>Source\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Physics\PhysicsWorld.cpp">
+      <Filter>Source\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Physics\Box2D\PhysicsBodyBox2D.cpp">
+      <Filter>Source\Physics\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Physics\Box2D\PhysicsWorldBox2D.cpp">
+      <Filter>Source\Physics\Box2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Physics\Jolt\JoltHelpers.cpp">
+      <Filter>Source\Physics\Jolt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Physics\Jolt\PhysicsBodyJolt.cpp">
+      <Filter>Source\Physics\Jolt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\Source\Physics\Jolt\PhysicsWorldJolt.cpp">
+      <Filter>Source\Physics\Jolt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Framework\Source\EventSystem\EventManager.h">
+      <Filter>Source\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\EventSystem\Events.h">
+      <Filter>Source\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Imgui\fs_ocornut_imgui.bin.h">
+      <Filter>Source\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Imgui\imgui_impl_bgfx.h">
+      <Filter>Source\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Imgui\ImGuiConfig.h">
+      <Filter>Source\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Imgui\ImGuiManager.h">
+      <Filter>Source\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Imgui\vs_ocornut_imgui.bin.h">
+      <Filter>Source\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Math\MathHelpers.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Math\Matrix.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Math\Random.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Math\Vector.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Objects\Camera.h">
+      <Filter>Source\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Objects\GameObject.h">
+      <Filter>Source\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\CoreHeaders.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\DataTypes.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Framework.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\FWCore.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\GameCore.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\EventSystem\EventListener.h">
+      <Filter>Source\EventSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Objects\Scene.h">
+      <Filter>Source\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Resources\Material.h">
+      <Filter>Source\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Resources\Mesh.h">
+      <Filter>Source\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Resources\ResourceManager.h">
+      <Filter>Source\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Resources\ShaderProgram.h">
+      <Filter>Source\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Resources\Texture.h">
+      <Filter>Source\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Utility\Uniforms.h">
+      <Filter>Source\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Utility\Utility.h">
+      <Filter>Source\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Components\Component.h">
+      <Filter>Source\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Components\ComponentManager.h">
+      <Filter>Source\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Physics\PhysicsBody.h">
+      <Filter>Source\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Physics\PhysicsTypes.h">
+      <Filter>Source\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Physics\PhysicsWorld.h">
+      <Filter>Source\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Physics\Box2D\PhysicsBodyBox2D.h">
+      <Filter>Source\Physics\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Physics\Box2D\PhysicsWorldBox2D.h">
+      <Filter>Source\Physics\Box2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Physics\Jolt\JoltHelpers.h">
+      <Filter>Source\Physics\Jolt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Physics\Jolt\PhysicsBodyJolt.h">
+      <Filter>Source\Physics\Jolt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\Physics\Jolt\PhysicsWorldJolt.h">
+      <Filter>Source\Physics\Jolt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\Source\b2_user_settings.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+//
+// Copyright (c) 2022-2023 Jimmy Lord
+//
+// This software is provided 'as-is', without any express or implied warranty.  In no event will the authors be held liable for any damages arising from the use of this software.
+// Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
+// 1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
+// 2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
+// 3. This notice may not be removed or altered from any source distribution.
+
+#pragma once
+
+#include "DataTypes.h"
+#include "VertexFormats.h"
+
+fw::Mesh* createTriangleMesh();
+fw::Mesh* createSquareMesh();
+fw::Mesh* createSpriteMesh();
+fw::Mesh* createD6Mesh(float width, float height, float depth);
+fw::Mesh* createPlaneMesh(ivec2 verts, vec2 worldSize, int textureReapeatRate);
+fw::Mesh* createObj(const char* objFileName);
+fw::Mesh* createHeightMap(const char* heightfilename, float maxHeight, vec2 worldSize, int textureReapeatRate);
+
+vec3 getHeightMapPixelPosition();
+std::vector<vec3> getHeightMapPixelPositions();
+
+float barycentricCoords(const vec3& p, const vec3& a, const vec3& b, const vec3& c);
+float getHeightAtXZ(float x, float z);
+
+//const int g_HeightmapWidth = 256;
+//const int g_HeightmapHeight = 256;
+//const vec2 g_HeightmapWorldSize = vec2(50, 50); // world space width and depth

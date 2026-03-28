@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{43099E52-C95A-3936-A0EA-CC9A8F5E213A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>GameProject</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)build\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)build\$(ProjectName)_Int_$(Platform)_$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GameProject</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Game</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)build\$(ProjectName)_$(Platform)_$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)build\$(ProjectName)_Int_$(Platform)_$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GameProject</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Game</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Game\Source;..\Framework\Source;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;..\Libraries\box2d\src\..\include;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bx\3rdparty;..\Libraries\bimg\3rdparty;..\Libraries\bimg\3rdparty\astc-encoder\include;..\Libraries\bimg\3rdparty\tinyexr\deps\miniz;..\Libraries\bimg\3rdparty\iqa\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Framework.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>GAME_PROJECT;WIN32;_WINDOWS;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Game\Source;..\Framework\Source;..\Libraries;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;..\Libraries\box2d\src\..\include;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\bx\3rdparty;..\Libraries\bimg\3rdparty;..\Libraries\bimg\3rdparty\astc-encoder\include;..\Libraries\bimg\3rdparty\tinyexr\deps\miniz;..\Libraries\bimg\3rdparty\iqa\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Game\Source;..\Framework\Source;..\Libraries;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;..\Libraries\box2d\src\..\include;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\bx\3rdparty;..\Libraries\bimg\3rdparty;..\Libraries\bimg\3rdparty\astc-encoder\include;..\Libraries\bimg\3rdparty\tinyexr\deps\miniz;..\Libraries\bimg\3rdparty\iqa\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>../build/bgfx_x64_Debug/bgfx.lib;../build/bimg_x64_Debug/bimg.lib;../build/box2d_x64_Debug/box2d.lib;../build/bx_x64_Debug/bx.lib;../build/Framework_x64_Debug/Framework.lib;../build/otherLibs_x64_Debug/otherLibs.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Game\Source;..\Framework\Source;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;..\Libraries\box2d\src\..\include;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bx\3rdparty;..\Libraries\bimg\3rdparty;..\Libraries\bimg\3rdparty\astc-encoder\include;..\Libraries\bimg\3rdparty\tinyexr\deps\miniz;..\Libraries\bimg\3rdparty\iqa\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Framework.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>GAME_PROJECT;WIN32;_WINDOWS;NDEBUG;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BX_CONFIG_DEBUG=1;__STDC_FORMAT_MACROS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Game\Source;..\Framework\Source;..\Libraries;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;..\Libraries\box2d\src\..\include;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\bx\3rdparty;..\Libraries\bimg\3rdparty;..\Libraries\bimg\3rdparty\astc-encoder\include;..\Libraries\bimg\3rdparty\tinyexr\deps\miniz;..\Libraries\bimg\3rdparty\iqa\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Game\Source;..\Framework\Source;..\Libraries;..\Libraries;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdParty\dxsdk\include;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\imgui;..\Libraries\box2d\src\..\include;..\Libraries\bgfx\include;..\Libraries\bgfx\3rdParty;..\Libraries\bgfx\3rdparty\directx-headers\include\directx;..\Libraries\bgfx\3rdParty\khronos;..\Libraries\bx\include;..\Libraries\bx\include\compat\msvc;..\Libraries\bimg\include;..\Libraries\bimg\3rdParty;..\Libraries\bx\3rdparty;..\Libraries\bimg\3rdparty;..\Libraries\bimg\3rdparty\astc-encoder\include;..\Libraries\bimg\3rdparty\tinyexr\deps\miniz;..\Libraries\bimg\3rdparty\iqa\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>../build/bgfx_x64_Release/bgfx.lib;../build/bimg_x64_Release/bimg.lib;../build/box2d_x64_Release/box2d.lib;../build/bx_x64_Release/bx.lib;../build/Framework_x64_Release/Framework.lib;../build/otherLibs_x64_Release/otherLibs.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\BuildShaders.bat">
+    </None>
+    <None Include="..\Game\DataRaw\BuildShaders.bat">
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\SolidColor.frag">
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\SolidColor.vert">
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\Texture.frag">
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\Texture.vert">
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\VertexColor.frag">
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\VertexColor.vert">
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\varying.def.sc">
+    </None>
+    <ClInclude Include="..\Game\Source\DataTypes.h" />
+    <ClCompile Include="..\Game\Source\Game.cpp">
+    </ClCompile>
+    <ClInclude Include="..\Game\Source\Events\GameEvents.h" />
+    <ClInclude Include="..\Game\Source\Game.h" />
+    <ClCompile Include="..\Game\Source\LoadResources.cpp" />
+    <ClCompile Include="..\Game\Source\Meshes\Shapes.cpp">
+    </ClCompile>
+    <ClInclude Include="..\Game\Source\LoadResources.h" />
+    <ClInclude Include="..\Game\Source\Meshes\Shapes.h" />
+    <ClCompile Include="..\Game\Source\Meshes\VertexFormats.cpp">
+    </ClCompile>
+    <ClInclude Include="..\Game\Source\Meshes\VertexFormats.h" />
+    <ClCompile Include="..\Game\Source\Objects\Player.cpp">
+    </ClCompile>
+    <ClInclude Include="..\Game\Source\Objects\Player.h" />
+    <ClCompile Include="..\Game\Source\Objects\VirtualGamepad.cpp" />
+    <ClInclude Include="..\Game\Source\Objects\VirtualGamepad.h" />
+    <ClCompile Include="..\Game\Source\Physics2D\Box2DContactListener.cpp" />
+    <ClCompile Include="..\Game\Source\Physics2D\Box2DDebugDraw.cpp" />
+    <ClCompile Include="..\Game\Source\Physics2D\Box2DManager.cpp" />
+    <ClCompile Include="..\Game\Source\SceneMarioKart\MKCameraObject.cpp" />
+    <ClCompile Include="..\Game\Source\SceneMarioKart\MKGameObject.cpp" />
+    <ClCompile Include="..\Game\Source\SceneMarioKart\MKPlayerObject.cpp" />
+    <ClCompile Include="..\Game\Source\SceneMarioKart\NetworkManager.cpp" />
+    <ClCompile Include="..\Game\Source\SceneMarioKart\SceneMarioKart.cpp" />
+    <ClCompile Include="..\Game\Source\Scenes\CubeScene.cpp" />
+    <ClCompile Include="..\Game\Source\Scenes\GameScene.cpp" />
+    <ClCompile Include="..\Game\Source\ShaderCompiler\ShaderCompilerGame.cpp">
+    </ClCompile>
+    <ClInclude Include="..\Game\Source\Physics2D\Box2DContactListener.h" />
+    <ClInclude Include="..\Game\Source\Physics2D\Box2DDebugDraw.h" />
+    <ClInclude Include="..\Game\Source\Physics2D\Box2DManager.h" />
+    <ClInclude Include="..\Game\Source\SceneMarioKart\MKCameraObject.h" />
+    <ClInclude Include="..\Game\Source\SceneMarioKart\MKGameObject.h" />
+    <ClInclude Include="..\Game\Source\SceneMarioKart\MKPlayerObject.h" />
+    <ClInclude Include="..\Game\Source\SceneMarioKart\NetworkManager.h" />
+    <ClInclude Include="..\Game\Source\SceneMarioKart\SceneMarioKart.h" />
+    <ClInclude Include="..\Game\Source\Scenes\CubeScene.h" />
+    <ClInclude Include="..\Game\Source\Scenes\GameScene.h" />
+    <ClInclude Include="..\Game\Source\ShaderCompiler\ShaderCompilerGame.h" />
+    <ClCompile Include="..\Game\Source\main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <None Include="..\GenerateProjectFiles.bat">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\TODO.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

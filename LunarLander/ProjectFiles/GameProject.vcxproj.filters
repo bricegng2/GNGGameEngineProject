@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Game\Source\Game.cpp">
+      <Filter>Game\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Source\Meshes\Shapes.cpp">
+      <Filter>Game\Source\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Source\Meshes\VertexFormats.cpp">
+      <Filter>Game\Source\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Source\ShaderCompiler\ShaderCompilerGame.cpp">
+      <Filter>Game\Source\ShaderCompiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Source\main.cpp">
+      <Filter>Game\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Source\Objects\VirtualGamepad.cpp">
+      <Filter>Game\Source\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Source\LoadResources.cpp">
+      <Filter>Game\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Game\Source\Scenes\LunarLanderScene.cpp">
+      <Filter>Game\Source\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Game\Source\DataTypes.h">
+      <Filter>Game\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Source\Game.h">
+      <Filter>Game\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Source\Meshes\Shapes.h">
+      <Filter>Game\Source\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Source\Meshes\VertexFormats.h">
+      <Filter>Game\Source\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Source\ShaderCompiler\ShaderCompilerGame.h">
+      <Filter>Game\Source\ShaderCompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Source\Events\GameEvents.h">
+      <Filter>Game\Source\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Source\Objects\VirtualGamepad.h">
+      <Filter>Game\Source\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Source\LoadResources.h">
+      <Filter>Game\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Game\Source\Scenes\LunarLanderScene.h">
+      <Filter>Game\Source\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\BuildShaders.bat" />
+    <None Include="..\Game\DataRaw\BuildShaders.bat">
+      <Filter>Game\DataRaw</Filter>
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\SolidColor.frag">
+      <Filter>Game\DataRaw\Shaders</Filter>
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\SolidColor.vert">
+      <Filter>Game\DataRaw\Shaders</Filter>
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\Texture.frag">
+      <Filter>Game\DataRaw\Shaders</Filter>
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\Texture.vert">
+      <Filter>Game\DataRaw\Shaders</Filter>
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\VertexColor.frag">
+      <Filter>Game\DataRaw\Shaders</Filter>
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\VertexColor.vert">
+      <Filter>Game\DataRaw\Shaders</Filter>
+    </None>
+    <None Include="..\Game\DataRaw\Shaders\varying.def.sc">
+      <Filter>Game\DataRaw\Shaders</Filter>
+    </None>
+    <None Include="..\GenerateProjectFiles.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{0AF44252-07AC-325C-9336-B2C0C48B8D67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\DataRaw">
+      <UniqueIdentifier>{01AA4B7B-AA74-3356-BEFA-4DBD18DBD4CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\DataRaw\Shaders">
+      <UniqueIdentifier>{8F222AE4-CE6E-3761-89E2-97E1FE0E4E2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Source">
+      <UniqueIdentifier>{75AF6405-DC0C-38DA-A07A-AA05B975D54F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Source\Objects">
+      <UniqueIdentifier>{4401E2BE-EF32-365D-B330-25445BC0C888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Source\Scenes">
+      <UniqueIdentifier>{91E6A00C-826A-3366-86DF-FB98B88CC74D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Source\ShaderCompiler">
+      <UniqueIdentifier>{F7C864E8-7562-3A1C-92BA-F82BC41C0041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Source\Events">
+      <UniqueIdentifier>{e68a5f04-d329-4a50-87d6-0ef8c3621f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Source\Meshes">
+      <UniqueIdentifier>{1C0B3732-DB66-3BC4-920F-9D8BA92E6806}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\TODO.txt" />
+  </ItemGroup>
+</Project>

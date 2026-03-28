@@ -1,0 +1,52 @@
+cmake_minimum_required( VERSION 3.20 )
+
+# Global Settings
+set_property( GLOBAL PROPERTY USE_FOLDERS ON )
+
+# Solution
+project( GameSolution VERSION 0.0.1 )
+
+# Visual Studio Settings
+if( CMAKE_CXX_COMPILER_ID MATCHES "MSVC" )
+	set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /ZI" ) # Program Database for Edit and Continue
+endif()
+
+add_compile_definitions( B2_USER_SETTINGS )
+
+###################
+# box2D Library
+###################
+
+include( GNUInstallDirs )
+add_subdirectory( Libraries/box2D/src Box2D )
+target_compile_features( box2d PRIVATE cxx_std_17 )
+set_target_properties( box2d PROPERTIES FOLDER "Physics Libs" )
+target_include_directories( box2d PRIVATE Framework/Source )
+
+###################
+# 3rd Party Libraries
+###################
+
+option( ENABLE_ALL_WARNINGS "Enable all warnings and warnings as errors" OFF )
+add_subdirectory( Libraries )
+add_subdirectory( Libraries/JoltPhysics/Build Jolt )
+set_property( TARGET Jolt PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>DLL" )
+set_target_properties( Jolt PROPERTIES FOLDER "Physics Libs" )
+
+###################
+# Framework Library
+###################
+
+add_subdirectory( Framework )
+
+###################
+# Game Project
+###################
+
+add_subdirectory( Game )
+
+# Visual Studio Settings
+if( CMAKE_CXX_COMPILER_ID MATCHES "MSVC" )
+	# Startup Project
+	set_property( DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT GameProject )
+endif()
